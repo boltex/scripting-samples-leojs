@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" tabindex="-1">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'none'; style-src #{cspSource}; img-src #{cspSource} https:; script-src 'nonce-#{nonce}';" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="#{root}/web/style.css" rel="stylesheet" />
+  <title>My Webview</title>
+</head>
+
+<body>
+  <p><span class="big">&#8593;</span> Tab icon from workspace<br><em class="muted">&lt;root&gt;/images/descartes.png</em></p>
+  <p>Image from the web<br><em class="muted">https://boltex.github.io/leoapp128px.png</em></p>
+  <img src="https://boltex.github.io/leoapp128px.png" />
+  <p>Image from workspace<br><em class="muted">&lt;root&gt;/images/descartes.png</em></p>
+  <img src="#{root}/images/descartes.png" />
+  <br>
+  <p>SVG from workspace<br><em class="muted">&lt;root&gt;/images/drawing.svg</em></p>
+  <img src="#{root}/images/drawing.svg" />
+  <br>
+
+  <p>
+    Some paragraph of text.
+    <a href="https://github.com/boltex/leojs">Here's a link</a>
+    and some sample form controls below.
+  </p>
+    <p>
+    Send it's data to LeoJS with the button,<br> or use the 'send-to-webview' <strong>@button<strong> to fill it with data from LeoJS.
+  </p>
+
+  <div class="row">
+    <label for="mySelect">My Dropdown:</label>
+    <select name="mySelect" id="mySelect" title="Some dropdown">
+      <option value="A">Choice A</option>
+      <option value="B">Choice B</option>
+      <option value="C">Choice C</option>
+      <option value="D">Choice D</option>
+    </select>
+  </div>
+  <div class="row">
+    <label for="myInput">My input:</label>
+    <input title="Some input" type="text" id="myInput" name="myInput" placeholder="Type some text">
+  </div>
+  <div class="row">
+    <input type="checkbox" id="myCheckbox1" name="myCheckbox1">
+    <label for="myCheckbox1" title="Some checkbox">Checkbox 1</label>
+    <input type="checkbox" id="myCheckbox2" name="myCheckbox2">
+    <label for="myCheckbox2" title="Some checkbox">Checkbox 2</label>
+  </div>
+  <div class="row">
+    <input type="radio" id="myRadio1" name="myRadioScope" checked value="1">
+    <label title="Some radio button" for="myRadio1">Radio 1</label>
+    <input type="radio" id="myRadio2" name="myRadioScope" value="2">
+    <label title="Some radio button" for="myRadio2">Radio 2</label>
+  </div>
+
+  <button type="button" id="myButton">Send to LeoJS</button>
+
+  <!-- end of body -->
+  <script nonce="#{nonce}" src="#{root}/web/main.js"></script>
+</body>
+
+</html>

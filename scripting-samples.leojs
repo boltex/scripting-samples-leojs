@@ -16,64 +16,112 @@
           "vh": "@button script-basic-ui"
         },
         {
-          "gnx": "felix.20240428020712.1",
-          "vh": "@button write-file"
+          "gnx": "felix.20240625162645.1",
+          "vh": "File I/O and open/save Dialogs",
+          "children": [
+            {
+              "gnx": "felix.20240428020712.1",
+              "vh": "@button write-file"
+            },
+            {
+              "gnx": "felix.20240520230417.1",
+              "vh": "@button write-from-dialog"
+            },
+            {
+              "gnx": "felix.20240520230424.1",
+              "vh": "@button read-from-dialog"
+            }
+          ]
         },
         {
-          "gnx": "felix.20240520230417.1",
-          "vh": "@button write-from-dialog"
+          "gnx": "felix.20240625162744.1",
+          "vh": "Executing shell commands & binaries",
+          "children": [
+            {
+              "gnx": "felix.20240428200310.1",
+              "vh": "@button run-command"
+            },
+            {
+              "gnx": "felix.20240428200240.1",
+              "vh": "@button run-external-bin"
+            }
+          ]
         },
         {
-          "gnx": "felix.20240520230424.1",
-          "vh": "@button read-from-dialog"
+          "gnx": "felix.20240625162842.1",
+          "vh": "Webview creation & interaction",
+          "children": [
+            {
+              "gnx": "felix.20240211230803.1",
+              "vh": "@button webview-from-files"
+            },
+            {
+              "gnx": "felix.20240220222639.1",
+              "vh": "@button reload-webview"
+            },
+            {
+              "gnx": "felix.20240217151710.1",
+              "vh": "@button send-to-webview"
+            }
+          ]
         },
         {
-          "gnx": "felix.20240428200310.1",
-          "vh": "@button run-command"
+          "gnx": "felix.20240625162910.1",
+          "vh": "Output panel",
+          "children": [
+            {
+              "gnx": "felix.20240211185932.1",
+              "vh": "@button output-panel"
+            },
+            {
+              "gnx": "felix.20240218160650.1",
+              "vh": "@button send-to-output"
+            }
+          ]
         },
         {
-          "gnx": "felix.20240428200240.1",
-          "vh": "@button run-external-bin"
+          "gnx": "felix.20240625162919.1",
+          "vh": "Virtual docs & markdown preview",
+          "children": [
+            {
+              "gnx": "felix.20240218160703.1",
+              "vh": "@button show-virtualdoc"
+            },
+            {
+              "gnx": "felix.20240218160712.1",
+              "vh": "@button change-virtualdoc"
+            },
+            {
+              "gnx": "felix.20240220230120.1",
+              "vh": "@button virtualdoc-markdown"
+            }
+          ]
         },
         {
-          "gnx": "felix.20240211230803.1",
-          "vh": "@button webview-from-files"
+          "gnx": "felix.20240625162947.1",
+          "vh": "Status bar items",
+          "children": [
+            {
+              "gnx": "felix.20240225203334.1",
+              "vh": "@button status-bar-item"
+            },
+            {
+              "gnx": "felix.20240225220646.1",
+              "vh": "@button status-bar-toggle"
+            }
+          ]
         },
         {
-          "gnx": "felix.20240220222639.1",
-          "vh": "@button reload-webview"
+          "gnx": "felix.20240625163728.1",
+          "vh": "JSZip"
         },
         {
-          "gnx": "felix.20240217151710.1",
-          "vh": "@button send-to-webview"
+          "gnx": "felix.20240625163732.1",
+          "vh": "SQLite"
         },
         {
-          "gnx": "felix.20240211185932.1",
-          "vh": "@button output-panel"
-        },
-        {
-          "gnx": "felix.20240218160650.1",
-          "vh": "@button send-to-output"
-        },
-        {
-          "gnx": "felix.20240218160703.1",
-          "vh": "@button show-virtualdoc"
-        },
-        {
-          "gnx": "felix.20240218160712.1",
-          "vh": "@button change-virtualdoc"
-        },
-        {
-          "gnx": "felix.20240220230120.1",
-          "vh": "@button virtualdoc-markdown"
-        },
-        {
-          "gnx": "felix.20240225203334.1",
-          "vh": "@button status-bar-item"
-        },
-        {
-          "gnx": "felix.20240225220646.1",
-          "vh": "@button status-bar-toggle"
+          "gnx": "felix.20240625163739.1",
+          "vh": "Pako"
         }
       ]
     },
@@ -105,7 +153,7 @@
     }
   ],
   "tnodes": {
-    "fil.20240311225244.1": "@language md\nScripting Samples\n=================\n\nThe 'sample script' node contains examples of VSCode UI interactions through its API.\n\nUse Ctrl+B to run any of them. Since they are @button nodes, they are also accessible in the BUTTONS pane for direct interaction.\n\n\nSimple Interaction\n==================\n\nThe 'script-basic-ui' node show how to get text input from the user in a dialog box, how to output it back in a simple information window, and also, how to make an HTTP call to an online API and show it's response in the Log Pane.\n\nunl:gnx://scripting-samples.leojs#felix.20240210225227.1\n\n\nWebview with sources from files\n===============================\n\nhttps://code.visualstudio.com/api/extension-guides/webview\n\nThe 'webview-from-files' node unl:gnx://scripting-samples.leojs#felix.20240211230803.1 shows how to create an interactive webview that has:\n - its source html, css, and other files from the workspace itself\n - images from the web \n - images from the local workspace\n - a form with interactive controls and buttons accessible from script\n\n See the nodes below for how to to reload the webview:\n unl:gnx://scripting-samples.leojs#felix.20240220222639.1\n\n and for sending data to the webview's form controls:\n unl:gnx://scripting-samples.leojs#felix.20240217151710.1\n\n\nOutput Panel\n============\n\nThe 'output-panel' and 'send-to-output' nodes show how to create an output panel, similar to the 'Leo Log Pane':\nunl:gnx://scripting-samples.leojs#felix.20240211185932.1\nunl:gnx://scripting-samples.leojs#felix.20240218160650.1\n\n\nVirtual Document\n================\n\nThe 'show-virtualdoc' and 'change-virtualdoc' nodes show how to create and display a virtual read-only document, and how to change its content:\nunl:gnx://scripting-samples.leojs#felix.20240218160703.1\nunl:gnx://scripting-samples.leojs#felix.20240218160712.1\n\nThe node 'virtualdoc-markdown' shows how to preview the render of a virtual document containing markdown.\nunl:gnx://scripting-samples.leojs#felix.20240220230120.1\n\n\nCustom Commands & Status Bar Buttons\n====================================\n\nSee the 'status-bar-item' and 'status-bar-toggle' below for how to create, show and hide a status bar button along with how to create custom commands make markdown content for its tooltip callout. (With clickable commands)\n",
+    "fil.20240311225244.1": "@language md\n\nScripting Samples\n=================\n\nThe 'sample script' node contains examples of VSCode UI interactions through its API. \n\nIt also contains example scripts on how to use libraries that are available in LeoJS: SQLite to interact with databases, JSZip to handle Zip files operations, pako for object serialization, etc.\n\nUse Ctrl+B to run any of them. \n\nSince they are @button nodes, they are also accessible in the BUTTONS pane for direct interaction.\n\n\nSimple Interaction\n==================\n\nThe 'script-basic-ui' node show how to get text input from the user in a dialog box, how to output it back in a simple information window, and also, how to make an HTTP call to an online API and show it's response in the Log Pane.\n\nunl:gnx://scripting-samples.leojs#felix.20240210225227.1\n\n\nWebview with sources from files\n===============================\n\nhttps://code.visualstudio.com/api/extension-guides/webview\n\nThe 'webview-from-files' node unl:gnx://scripting-samples.leojs#felix.20240211230803.1 shows how to create an interactive webview that has:\n - its source html, css, and other files from the workspace itself\n - images from the web \n - images from the local workspace\n - a form with interactive controls and buttons accessible from script\n\n See the nodes below for how to to reload the webview:\n unl:gnx://scripting-samples.leojs#felix.20240220222639.1\n\n and for sending data to the webview's form controls:\n unl:gnx://scripting-samples.leojs#felix.20240217151710.1\n\n\nOutput Panel\n============\n\nThe 'output-panel' and 'send-to-output' nodes show how to create an output panel, similar to the 'Leo Log Pane':\nunl:gnx://scripting-samples.leojs#felix.20240211185932.1\nunl:gnx://scripting-samples.leojs#felix.20240218160650.1\n\n\nVirtual Document\n================\n\nThe 'show-virtualdoc' and 'change-virtualdoc' nodes show how to create and display a virtual read-only document, and how to change its content:\nunl:gnx://scripting-samples.leojs#felix.20240218160703.1\nunl:gnx://scripting-samples.leojs#felix.20240218160712.1\n\nThe node 'virtualdoc-markdown' shows how to preview the render of a virtual document containing markdown.\nunl:gnx://scripting-samples.leojs#felix.20240220230120.1\n\n\nCustom Commands & Status Bar Buttons\n====================================\n\nSee the 'status-bar-item' and 'status-bar-toggle' below for how to create, show and hide a status bar button along with how to create custom commands make markdown content for its tooltip callout. (With clickable commands)\n",
     "felix.20240210225359.1": "@language javascript\n@nowrap\n",
     "felix.20240210225227.1": "/**\n * Basic scripting example (UI input, output, and HTTP fetch call)\n *\n * This uses vscode's U.I. to ask for some text input, to be printed in an info message window.\n * Finally, it also makes a http call to a sample API and prints its result in the log pane.\n */\nconst userInput = await vscode.window.showInputBox({\n    placeHolder: 'Type here', // Placeholder text in the input box\n    prompt: 'Enter text to be written output message:', // Prompt message above the input box\n});\n\nif (!userInput) {\n    vscode.window.showInformationMessage('User canceled the input.');\n} else {\n    vscode.window.showInformationMessage('User input was: ' + userInput);\n}\n\ntry {\n    const apiUrl = 'https://jsonplaceholder.typicode.com/todos/1';\n    const response = await fetch(apiUrl);\n    if (!response.ok) {\n        throw new Error('Network response was not ok!');\n    }\n    const data = await response.json();\n    g.es(\"Got JSON from online API\", JSON.stringify(data));\n} catch (error) {\n    g.es(\"Oh no!\", error.toString());\n}\n",
     "felix.20240428020712.1": "if(!c.fileName()){\n    g.es('Please save first!');\n    return;\n}\n\n// g.makeVscodeUri creates a vscode.Uri from a string and sets the\n// proper scheme and authority when using on the web. \nconst fileDirUri = g.makeVscodeUri(path.dirname(c.fileName()));\n\n// Create a \"text.txt\" file\nconst fileContent = Buffer.from(\"Hello world!\", 'utf-8');\nconst uri = vscode.Uri.joinPath(fileDirUri, \"text.txt\");\nawait vscode.workspace.fs.writeFile(uri, fileContent);\n\n// Create a binary file with specific bytes\nconst binaryContent = Buffer.from([0x00, 0x01, 0x02, 0x03, 0x04]);\nconst binaryUri = vscode.Uri.joinPath(fileDirUri, \"binary.bin\");\nawait vscode.workspace.fs.writeFile(binaryUri, binaryContent);\n",

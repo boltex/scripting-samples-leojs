@@ -16,64 +16,130 @@
           "vh": "@button script-basic-ui"
         },
         {
-          "gnx": "felix.20240428020712.1",
-          "vh": "@button write-file"
+          "gnx": "felix.20240625162645.1",
+          "vh": "File I/O and open/save Dialogs",
+          "children": [
+            {
+              "gnx": "felix.20240428020712.1",
+              "vh": "@button write-file"
+            },
+            {
+              "gnx": "felix.20240520230417.1",
+              "vh": "@button write-from-dialog"
+            },
+            {
+              "gnx": "felix.20240520230424.1",
+              "vh": "@button read-from-dialog"
+            }
+          ]
         },
         {
-          "gnx": "felix.20240520230417.1",
-          "vh": "@button write-from-dialog"
+          "gnx": "felix.20240625162744.1",
+          "vh": "Executing shell commands & binaries",
+          "children": [
+            {
+              "gnx": "felix.20240428200310.1",
+              "vh": "@button run-command"
+            },
+            {
+              "gnx": "felix.20240428200240.1",
+              "vh": "@button run-external-bin"
+            }
+          ]
         },
         {
-          "gnx": "felix.20240520230424.1",
-          "vh": "@button read-from-dialog"
+          "gnx": "felix.20240625162842.1",
+          "vh": "Webview creation & interaction",
+          "children": [
+            {
+              "gnx": "felix.20240211230803.1",
+              "vh": "@button webview-from-files"
+            },
+            {
+              "gnx": "felix.20240220222639.1",
+              "vh": "@button reload-webview"
+            },
+            {
+              "gnx": "felix.20240217151710.1",
+              "vh": "@button send-to-webview"
+            }
+          ]
         },
         {
-          "gnx": "felix.20240428200310.1",
-          "vh": "@button run-command"
+          "gnx": "felix.20240625162910.1",
+          "vh": "Output panel",
+          "children": [
+            {
+              "gnx": "felix.20240211185932.1",
+              "vh": "@button output-panel"
+            },
+            {
+              "gnx": "felix.20240218160650.1",
+              "vh": "@button send-to-output"
+            }
+          ]
         },
         {
-          "gnx": "felix.20240428200240.1",
-          "vh": "@button run-external-bin"
+          "gnx": "felix.20240625162919.1",
+          "vh": "Virtual docs & markdown preview",
+          "children": [
+            {
+              "gnx": "felix.20240218160703.1",
+              "vh": "@button show-virtualdoc"
+            },
+            {
+              "gnx": "felix.20240218160712.1",
+              "vh": "@button change-virtualdoc"
+            },
+            {
+              "gnx": "felix.20240220230120.1",
+              "vh": "@button virtualdoc-preview"
+            }
+          ]
         },
         {
-          "gnx": "felix.20240211230803.1",
-          "vh": "@button webview-from-files"
+          "gnx": "felix.20240625162947.1",
+          "vh": "Status bar items",
+          "children": [
+            {
+              "gnx": "felix.20240225203334.1",
+              "vh": "@button status-bar-item"
+            },
+            {
+              "gnx": "felix.20240225220646.1",
+              "vh": "@button status-bar-toggle"
+            }
+          ]
         },
         {
-          "gnx": "felix.20240220222639.1",
-          "vh": "@button reload-webview"
+          "gnx": "felix.20240625163728.1",
+          "vh": "Using SQLite, Zip and other librairies",
+          "children": [
+            {
+              "gnx": "felix.20240625181522.1",
+              "vh": "@button create-db"
+            },
+            {
+              "gnx": "felix.20240625181545.1",
+              "vh": "@button read-insert-db"
+            },
+            {
+              "gnx": "felix.20240625180612.1",
+              "vh": "@button create-zip-file"
+            },
+            {
+              "gnx": "felix.20240625180631.1",
+              "vh": "@button read-zip-file"
+            },
+            {
+              "gnx": "felix.20240625163739.1",
+              "vh": "@button pako-inflate-deflate"
+            }
+          ]
         },
         {
-          "gnx": "felix.20240217151710.1",
-          "vh": "@button send-to-webview"
-        },
-        {
-          "gnx": "felix.20240211185932.1",
-          "vh": "@button output-panel"
-        },
-        {
-          "gnx": "felix.20240218160650.1",
-          "vh": "@button send-to-output"
-        },
-        {
-          "gnx": "felix.20240218160703.1",
-          "vh": "@button show-virtualdoc"
-        },
-        {
-          "gnx": "felix.20240218160712.1",
-          "vh": "@button change-virtualdoc"
-        },
-        {
-          "gnx": "felix.20240220230120.1",
-          "vh": "@button virtualdoc-markdown"
-        },
-        {
-          "gnx": "felix.20240225203334.1",
-          "vh": "@button status-bar-item"
-        },
-        {
-          "gnx": "felix.20240225220646.1",
-          "vh": "@button status-bar-toggle"
+          "gnx": "felix.20240625163732.1",
+          "vh": "SQLite"
         }
       ]
     },
@@ -105,10 +171,10 @@
     }
   ],
   "tnodes": {
-    "fil.20240311225244.1": "@language md\nScripting Samples\n=================\n\nThe 'sample script' node contains examples of VSCode UI interactions through its API.\n\nUse Ctrl+B to run any of them. Since they are @button nodes, they are also accessible in the BUTTONS pane for direct interaction.\n\n\nSimple Interaction\n==================\n\nThe 'script-basic-ui' node show how to get text input from the user in a dialog box, how to output it back in a simple information window, and also, how to make an HTTP call to an online API and show it's response in the Log Pane.\n\nunl:gnx://scripting-samples.leojs#felix.20240210225227.1\n\n\nWebview with sources from files\n===============================\n\nhttps://code.visualstudio.com/api/extension-guides/webview\n\nThe 'webview-from-files' node unl:gnx://scripting-samples.leojs#felix.20240211230803.1 shows how to create an interactive webview that has:\n - its source html, css, and other files from the workspace itself\n - images from the web \n - images from the local workspace\n - a form with interactive controls and buttons accessible from script\n\n See the nodes below for how to to reload the webview:\n unl:gnx://scripting-samples.leojs#felix.20240220222639.1\n\n and for sending data to the webview's form controls:\n unl:gnx://scripting-samples.leojs#felix.20240217151710.1\n\n\nOutput Panel\n============\n\nThe 'output-panel' and 'send-to-output' nodes show how to create an output panel, similar to the 'Leo Log Pane':\nunl:gnx://scripting-samples.leojs#felix.20240211185932.1\nunl:gnx://scripting-samples.leojs#felix.20240218160650.1\n\n\nVirtual Document\n================\n\nThe 'show-virtualdoc' and 'change-virtualdoc' nodes show how to create and display a virtual read-only document, and how to change its content:\nunl:gnx://scripting-samples.leojs#felix.20240218160703.1\nunl:gnx://scripting-samples.leojs#felix.20240218160712.1\n\nThe node 'virtualdoc-markdown' shows how to preview the render of a virtual document containing markdown.\nunl:gnx://scripting-samples.leojs#felix.20240220230120.1\n\n\nCustom Commands & Status Bar Buttons\n====================================\n\nSee the 'status-bar-item' and 'status-bar-toggle' below for how to create, show and hide a status bar button along with how to create custom commands make markdown content for its tooltip callout. (With clickable commands)\n",
+    "fil.20240311225244.1": "@language md\n\nScripting Samples\n=================\n\nThe 'sample script' node contains examples of VSCode UI interactions through its API. \n\nIt also contains example scripts on how to use libraries that are available in LeoJS: SQLite to interact with databases, JSZip to handle Zip files operations, pako for object serialization, etc.\n\nUse Ctrl+B to run any of them. \n\nSince they are @button nodes, they are also accessible in the BUTTONS pane for direct interaction.\n\n\nSimple Interaction\n==================\n\nThe 'script-basic-ui' node show how to get text input from the user in a dialog box, how to output it back in a simple information window, and also, how to make an HTTP call to an online API and show it's response in the Log Pane.\n\nunl:gnx://scripting-samples.leojs#felix.20240210225227.1\n\n\nWebview with sources from files\n===============================\n\nhttps://code.visualstudio.com/api/extension-guides/webview\n\nThe 'webview-from-files' node unl:gnx://scripting-samples.leojs#felix.20240211230803.1 shows how to create an interactive webview that has:\n - its source html, css, and other files from the workspace itself\n - images from the web \n - images from the local workspace\n - a form with interactive controls and buttons accessible from script\n\n See the nodes below for how to to reload the webview:\n unl:gnx://scripting-samples.leojs#felix.20240220222639.1\n\n and for sending data to the webview's form controls:\n unl:gnx://scripting-samples.leojs#felix.20240217151710.1\n\n\nOutput Panel\n============\n\nThe 'output-panel' and 'send-to-output' nodes show how to create an output panel, similar to the 'Leo Log Pane':\nunl:gnx://scripting-samples.leojs#felix.20240211185932.1\nunl:gnx://scripting-samples.leojs#felix.20240218160650.1\n\n\nVirtual Document\n================\n\nThe 'show-virtualdoc' and 'change-virtualdoc' nodes show how to create and display a virtual read-only document, and how to change its content:\nunl:gnx://scripting-samples.leojs#felix.20240218160703.1\nunl:gnx://scripting-samples.leojs#felix.20240218160712.1\n\nThe node 'virtualdoc-markdown' shows how to preview the render of a virtual document containing markdown.\nunl:gnx://scripting-samples.leojs#felix.20240220230120.1\n\n\nCustom Commands & Status Bar Buttons\n====================================\n\nSee the 'status-bar-item' and 'status-bar-toggle' below for how to create, show and hide a status bar button along with how to create custom commands make markdown content for its tooltip callout. (With clickable commands)\n",
     "felix.20240210225359.1": "@language javascript\n@nowrap\n",
     "felix.20240210225227.1": "/**\n * Basic scripting example (UI input, output, and HTTP fetch call)\n *\n * This uses vscode's U.I. to ask for some text input, to be printed in an info message window.\n * Finally, it also makes a http call to a sample API and prints its result in the log pane.\n */\nconst userInput = await vscode.window.showInputBox({\n    placeHolder: 'Type here', // Placeholder text in the input box\n    prompt: 'Enter text to be written output message:', // Prompt message above the input box\n});\n\nif (!userInput) {\n    vscode.window.showInformationMessage('User canceled the input.');\n} else {\n    vscode.window.showInformationMessage('User input was: ' + userInput);\n}\n\ntry {\n    const apiUrl = 'https://jsonplaceholder.typicode.com/todos/1';\n    const response = await fetch(apiUrl);\n    if (!response.ok) {\n        throw new Error('Network response was not ok!');\n    }\n    const data = await response.json();\n    g.es(\"Got JSON from online API\", JSON.stringify(data));\n} catch (error) {\n    g.es(\"Oh no!\", error.toString());\n}\n",
-    "felix.20240428020712.1": "if(!c.fileName()){\n    g.es('Please save first!');\n    return;\n}\n\n// g.makeVscodeUri creates a vscode.Uri from a string and sets the\n// proper scheme and authority when using on the web. \nconst fileDirUri = g.makeVscodeUri(path.dirname(c.fileName()));\n\n// Create a \"text.txt\" file\nconst fileContent = Buffer.from(\"Hello world!\", 'utf-8');\nconst uri = vscode.Uri.joinPath(fileDirUri, \"text.txt\");\nawait vscode.workspace.fs.writeFile(uri, fileContent);\n\n// Create a binary file with specific bytes\nconst binaryContent = Buffer.from([0x00, 0x01, 0x02, 0x03, 0x04]);\nconst binaryUri = vscode.Uri.joinPath(fileDirUri, \"binary.bin\");\nawait vscode.workspace.fs.writeFile(binaryUri, binaryContent);\n",
+    "felix.20240428020712.1": "if(!c.fileName()){\n    g.es('Please save first!');\n    return;\n}\n\n// g.makeVscodeUri creates a vscode.Uri from a string and sets the\n// proper scheme and authority when using on the web. \nconst fileDirUri = g.makeVscodeUri(path.dirname(c.fileName()));\n\n// Create a \"text.txt\" file\nconst fileContent = Buffer.from(\"Hello world!\", 'utf-8');\nconst textFileUri = vscode.Uri.joinPath(fileDirUri, \"text.txt\");\nawait vscode.workspace.fs.writeFile(textFileUri, fileContent);\n\n// Create a binary file with specific bytes\nconst binaryContent = Buffer.from([0x00, 0x01, 0x02, 0x03, 0x04]);\nconst binaryUri = vscode.Uri.joinPath(fileDirUri, \"binary.bin\");\nawait vscode.workspace.fs.writeFile(binaryUri, binaryContent);\n",
     "felix.20240520230417.1": "// Opens a dialog for a new file name to be created containing 'Hello world!'\nconst filePath = await g.app.gui.runSaveFileDialog(\n    c,\n    'Write File',\n    [['All files', '*']],\n    '.*'\n);\n\nif(!filePath){\n    g.es('Cancelled!');\n    return;\n}\n\ng.es('Write file as dialog filePath is ' + filePath);\n\nconst fileContent = Buffer.from(\"Hello world!\", 'utf-8');\nconst uri = g.makeVscodeUri(filePath);\nawait vscode.workspace.fs.writeFile(uri, fileContent);\n",
     "felix.20240520230424.1": "// Opens a dialog for a file to be read to the log pane.\nconst filePath = await g.app.gui.runOpenFileDialog(\n    c,\n    'Open',\n    [['All files', '*']],\n    '.*',\n    false\n);\n\nif(!filePath){\n    g.es('Cancelled!');\n    return;\n}\n\ng.es('runOpenFileDialog result is ' + filePath);\n\nconst uri = g.makeVscodeUri(filePath);\n\nconst data = await vscode.workspace.fs.readFile(uri);\n\ng.es('The content of the file is ' + Buffer.from(data).toString('utf8'))\n",
     "felix.20240428200310.1": "\n// Run a command as a child process or exit if running on the web.\nif(g.isBrowser){\n    g.es('Running in browser: no terminal!');\n    return;\n}\n\n// Command to be executed\nconst command = 'echo \"Hello, world!\"';\n\n// Execute the command in a child process\nconst process = child_process.exec(command, (error, stdout, stderr) => {\n    if (error) {\n        g.es(`Execution error: ${error}`);\n        return;\n    }\n    g.es(`Output of child_process.exec: ${stdout}`);\n    if (stderr) {\n        g.es(`Command Error output: ${stderr}`);\n    }\n});\n",
@@ -123,6 +189,11 @@
     "felix.20240220230120.1": "/**\n * This script shows how to use VSCode's command to open a live preview \n * for markdown content. (in this case, a virtual document)\n */\nif(g.virtualDoc && g.virtualDocProvider){\n    const uri = vscode.Uri.parse('myScheme:' + 'myFilename');\n    void vscode.commands.executeCommand('markdown.showPreviewToSide', uri);\n}else{\n    g.es(\"virtual Document not yet created!\");\n}\n",
     "felix.20240225203334.1": "/**\n * This script shows how to create custom commands\n * and how to add them to a status bar item click event response,\n * and, as buttons in markdown links for its tooltip content.\n *\n * It stores the button and commands instances on 'g' as g.customCommand1,\n * g.customCommand2 and g.statusBarItem.\n */\nif(g.customCommand1){\n    g.es('customCommand1 already created');\n}else{\n    g.customCommand1 = vscode.commands.registerCommand(\n            'leojs.myCommand1',\n            ()=>{vscode.window.showInformationMessage(\"Custom Command 1 Called!\");}\n        );\n    g.extensionContext.subscriptions.push(g.customCommand1); // Disposable \n}\nif(g.customCommand2){\n    g.es('customCommand2 already created');\n}else{\n    g.customCommand2 = vscode.commands.registerCommand(\n            'leojs.myCommand2',\n            ()=>{vscode.window.showInformationMessage(\"Custom Command 2 Called!\");}\n        );\n    g.extensionContext.subscriptions.push(g.customCommand1); // Disposable \n}\n\nif(g.statusBarItem){\n    g.es('statusBarItem already created');\n}else{\n    g.statusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left, 0);\n    g.extensionContext.subscriptions.push(g.statusBarItem); // Disposable \n\n    g.statusBarItem.text = \"$(star) Custom Item\";\n    g.statusBarItem.color = \"fb7c47\";\n    g.statusBarItem.command = \"leojs.myCommand1\"; // Command1 when clicking item itself.\n\n    const tooltip = new vscode.MarkdownString(); // Command2 when using link in tooltip.\n    tooltip.value = g.dedent(`\\\n        ## Custom Tooltip\n\n        Click status bar item to activate Command 1.\n\n        ---\n\n        _Or click here to activate_ **[Command 2](command:leojs.myCommand2)**\n\n    `);\n    tooltip.isTrusted = true;\n    tooltip.supportThemeIcons = true;\n    g.statusBarItem.tooltip = tooltip;\n    g.statusBarItem.show();\n}\n",
     "felix.20240225220646.1": "/**\n * This script shows how to toggle the visibility of a status bar item.\n */\nif(!g.statusBarItem){\n    g.es('g.statusBarItem not yet created!');\n    return;\n}\nif(g.statusBarItemHidden){\n    g.statusBarItem.show();\n    g.statusBarItemHidden = false;\n}else{\n    g.statusBarItemHidden = true; // Store state as statusBarItemHidden on 'g'.\n    g.statusBarItem.hide();\n}\n",
+    "felix.20240625181522.1": "// See https://github.com/sql-js/sql.js for more info on sql-js.\n\n// Create a new database\nconst db = new g.SQL.Database();\n\n// Create a new table\nlet sqlstr = \"CREATE TABLE hello (a int, b char);\";\ndb.run(sqlstr);\n\n// Insert sample data\nsqlstr = \"INSERT INTO hello (a, b) VALUES (?, ?);\";\ndb.run(sqlstr, [1, 'foo']);\ndb.run(sqlstr, [2, 'bar']);\n\n// Export database data to buffer\nconst db_data = db.export();\nconst db_buffer = Buffer.from(db_data);\n\n// Define the URI for saving the database file\nconst fileDirUri = g.makeVscodeUri(path.dirname(c.fileName()));\nconst db_uri = vscode.Uri.joinPath(fileDirUri, \"database.db\");\n\n// Write the buffer to the specified file\nawait vscode.workspace.fs.writeFile(db_uri, db_buffer);\ng.es(\"buffer db to be written byte length :\", db_buffer.length);\n\nconst stats = await vscode.workspace.fs.stat(db_uri);\ng.es('DB written file size check : ', stats.size);\n\n// Close the database\ndb.close();",
+    "felix.20240625181545.1": "// See https://github.com/sql-js/sql.js for more info on sql-js.\n\nconst fileDirUri = g.makeVscodeUri(path.dirname(c.fileName()));\nconst db_uri = vscode.Uri.joinPath(fileDirUri, \"database.db\");\n\nlet stats: vscode.FileStat;\ntry {\n    stats = await vscode.workspace.fs.stat(db_uri);\n} catch {\n    g.es('SQLite db file does not exist!')\n    return;\n}\n\n// Read the database file into a buffer\nconst db_buffer = await vscode.workspace.fs.readFile(db_uri);\n\n// Load the database from the buffer\nconst db = new g.SQL.Database(db_buffer);\n\n// Get the highest value in column 'a'\nconst result = db.exec(\"SELECT MAX(a) as max_a FROM hello;\");\nconst max_a = result[0].values[0][0];\n\n// Increment the highest value by 1 for new entry\nconst new_a = max_a + 1;\nconst new_b = 'new_value';\n\ng.es('Highest was ' + max_a + ', adding ' + new_a);\n\n// Insert new data\nconst sqlstr = \"INSERT INTO hello (a, b) VALUES (?, ?);\";\ndb.run(sqlstr, [new_a, new_b]);\n\n// Export updated database data to buffer\nconst db_data = db.export();\nconst new_db_buffer = Buffer.from(db_data);\n\n// Write the updated buffer to the specified file\nawait vscode.workspace.fs.writeFile(db_uri, new_db_buffer);\n\ng.es(\"buffer db to be written byte length :\", db_buffer.length);\nstats = await vscode.workspace.fs.stat(db_uri);\ng.es('DB written file size check : ', stats.size);\n\n// Close the database\ndb.close();\n",
+    "felix.20240625180612.1": "// See https://github.com/Stuk/jszip for more info on JSZip.\nconst zip = new g.JSZip();\n\n// Create a file\nzip.file(\"hello.txt\", \"Hello new world\");\n\n// Create another file inside a folder\nzip.file(\"nested/hello.txt\", \"Hello World\\ninside on other line!\\n\");\n// Same as\n// zip.folder(\"nested\")!.file(\"hello.txt\", \"Hello World\\n\");\n\nconst fileDirUri = g.makeVscodeUri(path.dirname(c.fileName()));\nconst ZipUri = vscode.Uri.joinPath(fileDirUri, \"myZipFile.zip\");\n\nconst zip_data = await zip.generateAsync({ type: \"uint8array\" });\ng.es('zip data byte length: ', zip_data.byteLength);\n\nconst zip_buffer = Buffer.from(zip_data);\ng.es('Zip file buffer length: ', zip_buffer.length);\n\nawait vscode.workspace.fs.writeFile(ZipUri, zip_buffer);\n\n// Checking file just to make sure\nconst w_stats = await vscode.workspace.fs.stat(ZipUri);\ng.es('Zip file size on disk', w_stats.size);\n",
+    "felix.20240625180631.1": "// See https://github.com/Stuk/jszip for more info on JSZip.\nconst fileDirUri = g.makeVscodeUri(path.dirname(c.fileName()));\nconst ZipUri = vscode.Uri.joinPath(fileDirUri, \"myZipFile.zip\");\n\nlet stats: vscode.FileStat;\ntry {\n    stats = await vscode.workspace.fs.stat(ZipUri);\n} catch {\n    g.es('Zip file does not exist!')\n    return;\n}\n\ng.es('Zip file size ', stats.size);\n\nconst zipData = await vscode.workspace.fs.readFile(ZipUri);\nconst zip = await g.JSZip.loadAsync(zipData);\nconst file = await zip.file(\"hello.txt\")?.async(\"string\");\n\nif (file !== undefined) {\n    g.es('read from zip hello.txt: ', file);\n}\n",
+    "felix.20240625163739.1": "// Reproduces pako test from https://github.com/nodeca/pako?tab=readme-ov-file#examples--api\nconst testObject = { my: 'super', puper: [456, 567], awesome: 'pako' };\n\ng.es(\"Original object JSON is \" + JSON.stringify(testObject));\n\nconst compressed = g.pako.deflate(JSON.stringify(testObject));\n\nconst restored = JSON.parse(g.pako.inflate(compressed, { to: 'string' }));\n\ng.es('paco restored JSON object: ' + JSON.stringify(restored));\n",
     "felix.20240211213725.1": "<!DOCTYPE html>\n<html lang=\"en\" tabindex=\"-1\">\n\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta http-equiv=\"Content-Security-Policy\"\n    content=\"default-src 'none'; style-src #{cspSource}; img-src #{cspSource} https:; script-src 'nonce-#{nonce}';\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <link href=\"#{root}/web/style.css\" rel=\"stylesheet\" />\n  <title>My Webview</title>\n</head>\n\n<body>\n  <p><span class=\"big\">&#8593;</span> Tab icon from workspace<br><em class=\"muted\">&lt;root&gt;/images/descartes.png</em></p>\n  <p>Image from the web<br><em class=\"muted\">https://raw.githubusercontent.com/boltex/leojs/master/resources/leoapp128px.png</em></p>\n  <img src=\"https://raw.githubusercontent.com/boltex/leojs/master/resources/leoapp128px.png\" />\n  <p>Image from workspace<br><em class=\"muted\">&lt;root&gt;/images/descartes.png</em></p>\n  <img src=\"#{root}/images/descartes.png\" />\n  <br>\n  <p>SVG from workspace<br><em class=\"muted\">&lt;root&gt;/images/drawing.svg</em></p>\n  <img src=\"#{root}/images/drawing.svg\" />\n  <br>\n\n  <p>\n    Some paragraph of text.\n    <a href=\"https://github.com/boltex/leojs\">Here's a link</a>\n    and some sample form controls below.\n  </p>\n    <p>\n    Send its data to LeoJS with the button,<br> or use the 'send-to-webview' <strong>@button</strong> to fill it with data from LeoJS. \n  </p>\n\n  <div class=\"row\">\n    <label for=\"mySelect\">My Dropdown:</label>\n    <select name=\"mySelect\" id=\"mySelect\" title=\"Some dropdown\">\n      <option value=\"A\">Choice A</option>\n      <option value=\"B\">Choice B</option>\n      <option value=\"C\">Choice C</option>\n      <option value=\"D\">Choice D</option>\n    </select>\n  </div>\n  <div class=\"row\">\n    <label for=\"myInput\">My input:</label>\n    <input title=\"Some input\" type=\"text\" id=\"myInput\" name=\"myInput\" placeholder=\"Type some text\">\n  </div>\n  <div class=\"row\">\n    <input type=\"checkbox\" id=\"myCheckbox1\" name=\"myCheckbox1\">\n    <label for=\"myCheckbox1\" title=\"Some checkbox\">Checkbox 1</label>\n    <input type=\"checkbox\" id=\"myCheckbox2\" name=\"myCheckbox2\">\n    <label for=\"myCheckbox2\" title=\"Some checkbox\">Checkbox 2</label>\n  </div>\n  <div class=\"row\">\n    <input type=\"radio\" id=\"myRadio1\" name=\"myRadioScope\" checked value=\"1\">\n    <label title=\"Some radio button\" for=\"myRadio1\">Radio 1</label>\n    <input type=\"radio\" id=\"myRadio2\" name=\"myRadioScope\" value=\"2\">\n    <label title=\"Some radio button\" for=\"myRadio2\">Radio 2</label>\n  </div>\n\n  <button type=\"button\" id=\"myButton\">Send to LeoJS</button>\n\n  <!-- end of body -->\n  <script nonce=\"#{nonce}\" src=\"#{root}/web/main.js\"></script>\n</body>\n\n</html>\n",
     "felix.20240211205013.1": "@language javascript\n(function () {\n\n    const vscode = acquireVsCodeApi();\n\n    window.addEventListener('message', (event) => {\n        const message = event.data; // The json data\n        switch (message.toMyWebview) {\n            case 'hello':\n                console.log('Webview Got Hello');\n                break;\n            case 'hi':\n                console.log('Webview Got hi');\n                break;\n            case 'sendEvent':\n                receivedData(message.package);\n                break;\n            default:\n                console.log('Webview got some message');\n        }\n    });\n\n    vscode.postMessage({ fromMyWebview: 'myWebviewMessage' });\n\n    // Setup button click action\n    const myButton = document.getElementById(\"myButton\");\n    if (myButton) {\n        myButton.addEventListener(\"click\", sendData);\n    }\n\n    function sendData() {\n        const selectEl = document.getElementById(\"mySelect\");\n        const inputEl = document.getElementById(\"myInput\");\n        const checkbox1El = document.getElementById(\"myCheckbox1\");\n        const checkbox2El = document.getElementById(\"myCheckbox2\");\n        const radioEl = document.querySelector('input[name=\"myRadioScope\"]:checked');\n        const formValues = {\n            select: selectEl ? selectEl.value : undefined,\n            input: inputEl ? inputEl.value : undefined,\n            checkbox1: checkbox1El ? checkbox1El.checked : undefined,\n            checkbox2: checkbox2El ? checkbox2El.checked : undefined,\n            radio: radioEl ? radioEl.value : undefined,\n        };\n        vscode.postMessage(\n            {\n                fromMyWebview: 'myButtonPressed',\n                data: formValues\n            }\n        );\n    }\n\n    function receivedData(data) {\n        const selectEl = document.getElementById(\"mySelect\");\n        const inputEl = document.getElementById(\"myInput\");\n        const checkbox1El = document.getElementById(\"myCheckbox1\");\n        const checkbox2El = document.getElementById(\"myCheckbox2\");\n        const radioEl = document.querySelector(`input[name=\"myRadioScope\"][value=\"${data.radio}\"]`);\n        if (selectEl) selectEl.value = data.select;\n        if (inputEl) inputEl.value = data.input;\n        if (checkbox1El) checkbox1El.checked = data.checkbox1;\n        if (checkbox2El) checkbox2El.checked = data.checkbox2;\n        if (radioEl) radioEl.checked = true;\n    }\n\n})();\n",
     "felix.20240211205021.1": "@language css\nhtml {\n  box-sizing: border-box;\n  font-size: 13px;\n  --input-padding-vertical: 6px;\n  --input-padding-horizontal: 4px;\n  --input-margin-vertical: 4px;\n  --input-margin-horizontal: 0;\n  height: 100%;\n}\n\n*:focus {\n  outline-color: var(--vscode-focusBorder);\n}\n\na {\n  color: var(--vscode-textLink-foreground);\n}\n\na:hover,\na:active {\n  color: var(--vscode-textLink-activeForeground);\n}\n\ncode {\n  font-size: var(--vscode-editor-font-size);\n  font-family: var(--vscode-editor-font-family);\n}\n\nbutton {\n  border: 1px solid var(--vscode-button-border,transparent);\n  padding: var(--input-padding-vertical) var(--input-padding-horizontal);\n  border-radius: 2px;\n  width: 100%;\n  max-width: 300px;\n  text-align: center;\n  outline: 1px solid transparent;\n  outline-offset: 2px !important;\n  color: var(--vscode-button-foreground);\n  background: var(--vscode-button-background);\n}\n\nbutton:hover {\n  cursor: pointer;\n  background: var(--vscode-button-hoverBackground);\n}\n\nbutton:focus {\n  outline-color: var(--vscode-focusBorder);\n}\n\nbutton.secondary {\n  color: var(--vscode-button-secondaryForeground);\n  background: var(--vscode-button-secondaryBackground);\n}\n\nbutton.secondary:hover {\n  background: var(--vscode-button-secondaryHoverBackground);\n}\n\nlabel {\n  display: inline-block;\n  margin-bottom: 0.2em;\n}\n\nselect {\n  background: var(--vscode-dropdown-background);\n  color: var(--vscode-input-foreground);\n  border-color: var(--vscode-dropdown-border);\n  cursor: pointer;\n  position: relative;\n  border-radius: 2px;\n  padding: 3px var(--input-padding-horizontal);\n  color: var(--vscode-input-foreground);\n}\n\nselect:focus {\n  outline-color: var(--vscode-input-border);\n}\n\nselect:disabled {\n  opacity: 0.5;\n  cursor: default;\n}\n\nselect option {\n  background-color: var(--vscode-dropdown-listBackground);\n  padding: 3px var(--input-padding-horizontal);\n}\n\nselect option:focus {\n  background-color: var(--vscode-input-background);\n  outline-color: var(--vscode-input-border);\n}\n\ninput:not([type=\"radio\"]):not([type=\"checkbox\"]),\ntextarea {\n  margin-right: 20px;\n  border: none;\n  font-family: var(--vscode-font-family);\n  padding: 3px var(--input-padding-horizontal);\n  border-radius: 2px;\n  color: var(--vscode-input-foreground);\n  outline-color: var(--vscode-input-border);\n  background-color: var(--vscode-input-background);\n}\n\ntextarea {\n  width: 100%;\n  display: block;\n}\n\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  cursor: pointer;\n}\n\ninput:disabled {\n  opacity: 0.5;\n  cursor: default;\n}\n\ninput::placeholder,\ntextarea::placeholder {\n  color: var(--vscode-input-placeholderForeground);\n}\n\nu {\n  color: var(--vscode-editor-foreground);\n  text-decoration-color: var(--vscode-foreground);\n  text-underline-offset: 0.04em;\n}\n\n.row {\n  margin-bottom: 0.5em;\n}\n\n.muted {\n  opacity: 0.6;\n}\n\n.big {\n  font-size: 20px;\n}",

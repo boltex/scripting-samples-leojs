@@ -136,10 +136,6 @@
               "vh": "@button pako-inflate-deflate"
             }
           ]
-        },
-        {
-          "gnx": "felix.20240625163732.1",
-          "vh": "SQLite"
         }
       ]
     },

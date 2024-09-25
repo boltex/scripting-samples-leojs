@@ -1,15 +1,23 @@
 # Scripting Samples for LeoJS
 
-> _For an extension sample that interacts with LeoJS, see [extension-samples-leojs](https://github.com/boltex/extension-samples-leojs)_
+[LeoJS](https://boltex.github.io/leojs/) can run Leo scripts in both JavaScript or TypeScript.
 
-[LeoJS](https://github.com/boltex/leojs?tab=readme-ov-file#-literate-editor-with-outline) can run Leo scripts in both JavaScript or TypeScript, instead of Python.
+🚀 **This repository contains a Leo file which demonstrates various ways to use the VSCode API, the UI, and other useful features of LeoJS.**
 
-Three predefined symbols, c, g, and p give Leo scripts easy access to all the data in the outline. These symbols also allow Leo scripts to execute any code in Leo’s own codebase. The g symbols also contains references to useful objects, such as the VSCode API, to handle interactions with the UI, other extensions, or anything else in the IDE.
+## How to use on the web in your browser
+
+LeoJS can be run as a web extension on [VSCode for the web](https://code.visualstudio.com/docs/remote/codespaces#_browserbased-editor).
+
+To work directly with this repository and try out those scripts online, simply navigate to this scripting-sample repository on github at [https://github.com/boltex/scripting-samples-leojs](https://github.com/boltex/scripting-samples-leojs) and press `.` (period key).
 
 ## How to run sample scripts
-
-**This repository contains a Leo file which demonstrates various ways to use the VSCode API and interact with its UI.**
 
 [Install the LeoJS extension](https://code.visualstudio.com/docs/editor/extension-marketplace#_browse-for-extensions), right-click on the **scripting-sample.leojs** file in the explorer to open it with LeoJS, and see the **Introduction** node for more details on each sample script.
 
 Don't hesitate to ask questions, file issues, or make comments and suggestions on [the project's issue page](https://github.com/boltex/leojs/issues).
+
+# About LeoJS
+
+LeoJS is a JavaScript implementation of the Leo Editor designed as an extension for VSCode.
+
+See the [LeoJS Homepage](https://boltex.github.io/leojs/) for more details.
